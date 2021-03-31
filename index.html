@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TB - Sliding Puzzle</title>
+		<link
+			rel="shortcut icon"
+			href="./assets/favicon.ico"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body class="container">
+		<div id="puzzle">
+			<div id="row1" class="row">
+				<div id="field11" class="piece1" onclick="move(1,1)"></div>
+				<div id="field12" class="piece2" onclick="move(1,2)"></div>
+				<div id="field13" class="piece3" onclick="move(1,3)"></div>
+				<div id="field14" class="piece4" onclick="move(1,4)"></div>
+			</div>
+			<div id="row2" class="row">
+				<div id="field21" class="piece5" onclick="move(2,1)"></div>
+				<div id="field22" class="piece6" onclick="move(2,2)"></div>
+				<div id="field23" class="piece7" onclick="move(2,3)"></div>
+				<div id="field24" class="piece8" onclick="move(2,4)"></div>
+			</div>
+			<div id="row3" class="row">
+				<div id="field31" class="piece9" onclick="move(3,1)"></div>
+				<div id="field32" class="piece10" onclick="move(3,2)"></div>
+				<div id="field33" class="piece11" onclick="move(3,3)"></div>
+				<div id="field34" class="piece12" onclick="move(3,4)"></div>
+			</div>
+			<div id="row4" class="row">
+				<div id="field41" class="piece13" onclick="move(4,1)"></div>
+				<div id="field42" class="piece14" onclick="move(4,2)"></div>
+				<div id="field43" class="piece15" onclick="move(4,3)"></div>
+				<div id="field44" class="piece16" onclick="move(4,4)"></div>
+			</div>
+		</div>
+		<div id="buttons">
+			<button onclick="shuffle()">Shuffle</button>
+			<button onclick="showSolution()">Show solution</button>
+		</div>
+		<div id="resolution">
+			<h1 id="moves">
+				MOVES COUNTER: <br />
+				<span></span>
+			</h1>
+			<h1 id="success">CORRECTLY SOLVED!</h1>
+			<h1 id="failure">NOT SOLVED YET</h1>
+		</div>
+	</body>
+	<script src="./js/app.js"></script>
+</html>
